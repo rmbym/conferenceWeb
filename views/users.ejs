@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <p> see Our Conferences: </p>
+    <%= list %>;
+    <p> Create a conference </p>
+        <form action="", method="post">
+          Your name:
+          <input type="text" name="pname" placeholder="Your name">
+          <br>
+          The theme of the conference:
+          <input type="text" name="cname" placeholder="the theme of the conference">
+          <br>
+          The start of the conference:
+          <input type="text" name="start" placeholder="the start of the conference">
+          <br>
+          The end of the conference:
+          <input type="text" name="end" placeholder="the end of the conference">
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
+
+    <br><br>
+    <p> delete a conference </p>
+            <form action="", method="post" id ="delete">
+              The theme of the conference:
+              <input type="text" name="cname" placeholder="the theme of the conference">
+              <input type="submit" value="Submit">
+            </form>
+  </body>
+</html>

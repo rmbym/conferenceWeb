@@ -3,8 +3,8 @@ var mongoose = require('mongoose');
 var schema = mongoose.Schema;
 
 var userSchema = new schema({
-        name: { type: String, index: true },
-        mdp: { type: String, index: true }
+        name: String,
+        mdp: String
     },
     {collection: `users`}
 ); // we did specify the collection we're using for this
@@ -14,4 +14,4 @@ var userSchema = new schema({
 var User = mongoose.model('User',userSchema);
 
 //export the module
-module.exports = User ;
+module.exports = User;
