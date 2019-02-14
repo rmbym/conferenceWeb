@@ -13,7 +13,6 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res) {
   let nwusername = req.body.pseudo;
   let nwusermdp= req.body.mdp;
-  console.log(nwusername, nwusermdp);
   // the read from mongo DB & "auth"
   compareUsers(nwusername,nwusermdp,res,User);
 });

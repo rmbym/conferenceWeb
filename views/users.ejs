@@ -26,10 +26,21 @@
 
     <br><br>
     <p> delete a conference </p>
-            <form action="", method="post" id ="delete">
-              The theme of the conference:
-              <input type="text" name="cname" placeholder="the theme of the conference">
+            <form action="/delete", method="post">
+              The ID of the conference:
+              <input type="text" name="cid" placeholder="The ID of the conference">
               <input type="submit" value="Submit">
             </form>
+
+
+            <p> Update a conference </p>
+                        <form action="/update", method="post">
+                          The ID of the conference:
+                          <input type="text" name="cid" placeholder="The ID of the conference">
+                          The New theme of the conference:
+                          <input type="text" name="cname" placeholder="theme of the conference">
+                                    <br>
+                          <input type="submit" value="Submit">
+                        </form>
   </body>
 </html>
