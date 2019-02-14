@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title><%= fav %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <p><%= connect %></p>
+        <form action="" method="post" id="inscription">
+          First name:<br>
+          <input type="text" name="firstname" placeholder="Name">
+          <br>
+          Password:<br>
+          <input type="text" name="mdp" placeholder="Mdp">
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
   </body>
 </html>
