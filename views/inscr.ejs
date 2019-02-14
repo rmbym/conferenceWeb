@@ -6,16 +6,15 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p><%= connect %></p>
-        <form action="" method="post">
+    <p><%= inscr %></p>
+        <form action="/inscription" method="post">
           First name:<br>
-          <input type="text" name="pseudo" placeholder="Name">
+          <input type="text" name="name" placeholder="Name">
           <br>
           Password:<br>
           <input type="text" name="mdp" placeholder="Mdp">
           <br><br>
           <input type="submit" value="Submit">
         </form>
-        <a href='/inscription'> vous inscrire ?</a>
   </body>
 </html>
