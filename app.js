@@ -16,9 +16,16 @@ var updRouter = require('./routes/update.js');
 
 var app = express();
 
-mongoose.connect('mongodb://127.0.0.1:27017/fitnessDB',{useNewUrlParser: true}, function(err){
+mongoose.connect('mongodb://127.0.0.1:27017/',{useNewUrlParser: true}, function(err){
   if (!err) {
+    const dbo =String("ConferenceDB");
     console.log("we are connected to the database");
+    dbo.createCollection("users", function (err) {
+      if(err){console.log("couldnt create collection users")}
+    });
+    dbo.createCollection("conf", function(err) {
+      if(err){console.log("couldnt create collection Conf")}
+    });
   }
 });
 // view engine setup
